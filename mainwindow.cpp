@@ -57,7 +57,7 @@ void MainWindow::check_temperature() {
 /* Read the content of the temperature driver file */
 int MainWindow::readFile() {
     // Define the input file stream
-    std::ifstream temp_file("/home/talel/capteurtemp");
+    std::ifstream temp_file("/opt/Temperature/bin/dht11_temp");
     int temperature;
     temp_file >> temperature;
     return temperature;
